@@ -1,0 +1,148 @@
+/* src/pages/Home/Home.css */
+
+.home-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.main-banner {
+  position: relative;
+  height: 500px;
+  background-size: cover;
+  background-position: 0px 55px; 
+  background-repeat: no-repeat;
+}
+
+
+.main-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  text-align: center;
+  color: white;
+}
+
+.banner-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.banner-content p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.125rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.trail-list {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.trail-list h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #333;
+}
+
+.trail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.load-more-button {
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.load-more-button:hover {
+  transform: scale(1.05);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.trail-grid > * {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+* + * {
+  margin-top: 0;
+}
+
+.search-input,
+.load-more-button {
+  transition: all 0.3s ease;
+}

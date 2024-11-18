@@ -1,0 +1,153 @@
+.confirmation-page {
+    min-height: calc(100vh - 200px);
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    height: 100vh;
+    margin-top: 78px;
+  }
+  
+  .confirmation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding: 60px 40px;
+  }
+  
+  .confirmation-content {
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+  }
+  
+  .check-mark {
+    width: 80px;
+    height: 80px;
+    background-color: #40c057;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 30px;
+    animation: scaleIn 0.5s ease-out;
+  }
+  
+  .confirmation-title {
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+  }
+  
+  .confirmation-message {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .order-details {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+    animation-delay: 0.7s;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+  }
+  
+  .detail-item i {
+    font-size: 24px;
+  }
+  
+  .detail-item p {
+    color: #495057;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .continue-shopping-btn {
+    background-color: #228be6;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+    animation-delay: 0.9s;
+  }
+  
+  .continue-shopping-btn:hover {
+    background-color: #1971c2;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .confirmation-container {
+      padding: 30px 20px;
+    }
+  
+    .confirmation-title {
+      font-size: 2rem;
+    }
+  
+    .confirmation-message {
+      font-size: 1.1rem;
+    }
+  
+    .detail-item {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .detail-item p {
+      text-align: center;
+    }
+  }

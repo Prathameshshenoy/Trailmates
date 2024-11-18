@@ -1,0 +1,154 @@
+.navbar {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;  /* Space between left and right sections */
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;  /* Adds space between logo and selected city */
+}
+
+.logo {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+/* Position the selected city right next to the logo */
+.selected-city {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.selected-city .change-city {
+  color: #007bff;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+}
+
+.selected-city:hover {
+  opacity: 0.8;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: border-color 0.2s;
+}
+
+.profile-pic:hover {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.header {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.name {
+  font-weight: 600;
+  color: #374151;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #374151;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  font-size: 0.875rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #f3f4f6;
+}
+
+.logout {
+  color: #dc2626;
+  width: 100%;
+}
+
+.logout:hover {
+  background-color: #fef2f2;
+}
+
+.login-btn {
+  color: #333;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.login-btn:hover {
+  opacity: 0.8;
+}

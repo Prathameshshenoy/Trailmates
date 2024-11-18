@@ -1,0 +1,174 @@
+/* submittrailform.css */
+.background {
+  background-image: url(http://localhost:8000/images/hiking.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+.form-container {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.form-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.3s forwards;
+  letter-spacing: -0.5px;
+}
+
+form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4a5568;
+  letter-spacing: 0.2px;
+}
+
+.input-group input,
+.input-group select {
+  padding: 0.875rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.15);
+  outline: none;
+}
+
+.input-group input[type="file"] {
+  padding: 0.875rem;
+  border: 2px dashed #cbd5e0;
+  background-color: rgba(247, 250, 252, 0.8);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-group input[type="file"]:hover {
+  border-color: #4299e1;
+  background-color: rgba(235, 248, 255, 0.8);
+}
+
+.input-group select {
+  padding: 0.875rem;
+  border: 2px solid #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.875rem 1.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background-color: #3182ce;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.2);
+}
+
+.submit-btn:active {
+  background-color: #2b6cb0;
+  transform: translateY(0);
+}
+
+.error {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.success {
+  background-color: rgba(198, 246, 213, 0.9);
+  color: #2f855a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

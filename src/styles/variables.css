@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #2d5a27;
+  --primary-hover: #1e3f1c;
+  --secondary-color: #f4f4f4;
+  --text-color: #333;
+  --text-light: #666;
+  --white: #ffffff;
+  --error: #dc3545;
+  --success: #28a745;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --border-radius: 4px;
+  --transition: all 0.3s ease;
+}

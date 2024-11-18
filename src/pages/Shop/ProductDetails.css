@@ -1,0 +1,453 @@
+/* ProductDetails.css */
+.product-container {
+  margin-top: 78px; /* Account for navbar */
+  padding: 40px;
+  min-height: calc(100vh - 200px);
+  background-color: #f8f9fa;
+}
+
+.product-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.loading-spinner {
+  margin-top: 200px;
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  margin-top: 200px;
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
+
+/* Image Section */
+.product-image-section {
+  background-color: #f8f9fa;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+/* Badges */
+.badge {
+  position: absolute;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.badge.new {
+  top: 16px;
+  left: 16px;
+  background-color: #28a745;
+  color: white;
+}
+
+.badge.discount {
+  top: 16px;
+  right: 16px;
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Product Info Section */
+.product-info-section {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-category {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f1f3f5;
+  color: #495057;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #212529;
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+}
+
+.product-price-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+.original-price {
+  font-size: 1.2rem;
+  color: #868e96;
+  text-decoration: line-through;
+}
+
+.discount-tag {
+  padding: 4px 8px;
+  background-color: #fff0f3;
+  color: #e03131;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.stock-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.stock-status.in-stock {
+  background-color: #d3f9d8;
+  color: #2b8a3e;
+}
+
+.stock-status.low-stock {
+  background-color: #fff3bf;
+  color: #e67700;
+}
+
+.stock-status.out-of-stock {
+  background-color: #ffe3e3;
+  color: #c92a2a;
+}
+
+.product-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 32px;
+}
+
+.product-actions {
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn {
+  background-color: #ffc107;
+  color: #ffffff;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e0a800;
+}
+
+.buy-now-btn {
+  background-color: #228be6;
+  color: #ffffff;
+}
+
+.buy-now-btn:hover {
+  background-color: #1971c2;
+}
+
+/* ProductDetails.css */
+
+/* Additional styles for Quantity Selector */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.quantity-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #f1f3f5;
+  border: none;
+  font-size: 1.5rem;
+  color: #495057;
+  cursor: pointer;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #e9ecef;
+}
+
+.quantity-input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Add these new styles to your existing ProductDetails.css */
+
+.image-wrapper.sold-out {
+  position: relative;
+}
+
+.sold-out-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.sold-out-text {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transform: rotate(-15deg);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  animation: scaleIn 0.3s ease-out;
+}
+
+.stock-status {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sold-out-badge {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  animation: slideIn 0.3s ease-out;
+}
+
+.restock-message {
+  color: #6c757d;
+  font-size: 0.95rem;
+  margin: 0;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8) rotate(-15deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(-15deg);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.alert-message {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(248, 113, 113, 0.15);
+  z-index: 1000;
+  animation: slideDown 0.3s ease-out, fadeOut 0.3s ease-out 2.7s;
+  pointer-events: none;
+  min-width: 300px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sold-out-text {
+    font-size: 1.2rem;
+    padding: 8px 24px;
+  }
+  
+  .sold-out-badge {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+  
+  .restock-message {
+    font-size: 0.85rem;
+  }
+}
+/* Add these styles to your existing ProductDetails.css */
+/* Updated stock warning styles */
+.stock-warning {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(248, 113, 113, 0.15);
+  z-index: 1000;
+  animation: slideDown 0.3s ease-out, fadeOut 0.3s ease-out 2.7s;
+  pointer-events: none;
+  min-width: 300px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Add responsive adjustments */
+@media (max-width: 768px) {
+  .stock-warning {
+    min-width: 280px;
+    font-size: 1rem;
+    padding: 14px 28px;
+  }
+}
+
