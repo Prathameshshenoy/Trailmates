@@ -127,11 +127,11 @@
 .review-form form {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* Added gap for consistent spacing between form elements */
+  gap: 16px;
 }
 
 .review-form label {
-  margin-bottom: 8px; /* Adjusted margin for better spacing */
+  margin-bottom: 8px; 
   font-size: 1.1rem;
   font-weight: 500;
 }
@@ -142,9 +142,9 @@
   font-size: 1rem;
   border: 1px solid #e9ecef;
   border-radius: 8px;
-  margin-bottom: 16px; /* Ensure consistent bottom margin */
-  width: 100%; /* Ensure full width of the input/textarea */
-  box-sizing: border-box; /* Prevent padding from affecting width */
+  margin-bottom: 16px; 
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
 .review-form button {
@@ -155,7 +155,7 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  width: 100%; /* Make button full-width */
+  width: 100%; 
 }
 
 .review-form button:hover {

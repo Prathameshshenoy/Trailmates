@@ -299,9 +299,7 @@ const sampleTrails = [
   images: [
     "/images/Mumbai/Gilbert_Hill/gilbert1.jpg",
     "/images/Mumbai/Gilbert_Hill/gilbert2.jpg",
-    "/images/Mumbai/Gilbert_Hill/gilbert3.jpg",
-    "/images/Mumbai/Gilbert_Hill/gilbert4.jpg",
-    "/images/Mumbai/Gilbert_Hill/gilbert5.jpg"
+   
   ],
   elevation: "200 ft",
   location: "Andheri West",
@@ -316,15 +314,13 @@ const sampleTrails = [
 
   // Delhi Trails
   {
-    name: "Asola Bhatti Wildlife Sanctuary Trek",
+    name: "Asola Bhatti Trek",
     difficulty: "Easy",
     length: "4.5 miles",
     images: [
       "/images/Delhi/Asola_Bhatti_Wildlife_Sanctuary_Trek_Pics/asola1.jpg",
       "/images/Delhi/Asola_Bhatti_Wildlife_Sanctuary_Trek_Pics/asola2.jpg",
-      "/images/Delhi/Asola_Bhatti_Wildlife_Sanctuary_Trek_Pics/asola3.jpg",
-      "/images/Delhi/Asola_Bhatti_Wildlife_Sanctuary_Trek_Pics/asola4.jpg",
-      "/images/Delhi/Asola_Bhatti_Wildlife_Sanctuary_Trek_Pics/asola5.jpg"
+     
     ],
     elevation: "700 ft",
     location: "Asola",
@@ -343,9 +339,7 @@ const sampleTrails = [
     images: [
       "/images/Delhi/Surajkund_Trek_Pics/surajkund1.jpg",
       "/images/Delhi/Surajkund_Trek_Pics/surajkund2.jpg",
-      "/images/Delhi/Surajkund_Trek_Pics/surajkund3.jpg",
-      "/images/Delhi/Surajkund_Trek_Pics/surajkund4.jpg",
-      "/images/Delhi/Surajkund_Trek_Pics/surajkund5.jpg"
+    
     ],
     elevation: "600 ft",
     location: "Faridabad",

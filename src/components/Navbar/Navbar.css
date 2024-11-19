@@ -10,7 +10,7 @@
 
 .container {
   display: flex;
-  justify-content: space-between;  /* Space between left and right sections */
+  justify-content: space-between;  
   align-items: center;
   padding: 0 1rem;
 }
@@ -18,7 +18,7 @@
 .left-section {
   display: flex;
   align-items: center;
-  gap: 1rem;  /* Adds space between logo and selected city */
+  gap: 1rem;
 }
 
 .logo {
@@ -35,7 +35,7 @@
   opacity: 0.9;
 }
 
-/* Position the selected city right next to the logo */
+
 .selected-city {
   display: flex;
   align-items: center;

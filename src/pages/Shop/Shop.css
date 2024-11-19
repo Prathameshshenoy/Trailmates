@@ -1,11 +1,8 @@
-/* Shop.css */
-
 .shop-container {
   min-height: 100vh;
   background-color: #f8f9fa;
 }
 
-/* Hero Section */
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://localhost:8000/images/shop.jpg);
   background-size: cover;
@@ -36,7 +33,6 @@
   margin: 0 auto;
 }
 
-/* Controls Section */
 .controls-section {
   max-width: 1200px;
   margin: 0 auto 40px;
@@ -87,7 +83,6 @@
   border-color: #007bff;
 }
 
-/* Products Section */
 .products-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -101,7 +96,6 @@
   padding: 20px 0;
 }
 
-/* Status Messages */
 .loading,
 .error-message,
 .no-products {
@@ -115,45 +109,3 @@
   color: #dc3545;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-section {
-    height: 200px;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  .products-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
-  .category-btn {
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-section {
-    height: 150px;
-  }
-
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .categories {
-    gap: 8px;
-  }
-}

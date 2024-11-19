@@ -3,7 +3,7 @@
     background-color: #f8f9fa;
     padding: 40px 20px;
     height: 100vh;
-    margin-top: 78px;
+    margin-top: 50px;
   }
   
   .confirmation-container {
@@ -98,7 +98,6 @@
     background-color: #1971c2;
   }
   
-  /* Animations */
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -128,26 +127,3 @@
     }
   }
   
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .confirmation-container {
-      padding: 30px 20px;
-    }
-  
-    .confirmation-title {
-      font-size: 2rem;
-    }
-  
-    .confirmation-message {
-      font-size: 1.1rem;
-    }
-  
-    .detail-item {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .detail-item p {
-      text-align: center;
-    }
-  }

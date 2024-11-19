@@ -38,21 +38,21 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-top: 20px; /* Added top margin to the form */
+  margin-top: 20px; 
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: 100%; /* Ensure full width for form elements */
+  width: 100%; 
 }
 
 .form-group label {
   color: #1a1a1a;
   font-size: 14px;
   font-weight: 500;
-  margin-bottom: 5px; /* Small margin for label spacing */
+  margin-bottom: 5px; 
 }
 
 .form-group input {
@@ -61,8 +61,8 @@
   border-radius: 8px;
   font-size: 14px;
   transition: all 0.2s ease;
-  width: 100%; /* Ensure the input takes full width */
-  box-sizing: border-box; /* Ensure padding doesn't mess with width */
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 .form-group input:focus {
@@ -85,7 +85,7 @@
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  width: 100%; /* Full-width button */
+  width: 100%; 
 }
 
 .submit-button:hover {

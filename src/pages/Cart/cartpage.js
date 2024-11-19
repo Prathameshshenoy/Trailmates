@@ -9,7 +9,7 @@ const CartPage = () => {
   const [itemCount, setItemCount] = useState(0);
   const [stockWarning, setStockWarning] = useState('');
   const [productStock, setProductStock] = useState({});
-  const [totalStock, setTotalStock] = useState({}); // New state for total stock
+  const [totalStock, setTotalStock] = useState({}); 
 
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem('cart')) || [];
@@ -17,21 +17,20 @@ const CartPage = () => {
     calculateTotal(items);
     setItemCount(items.reduce((acc, item) => acc + item.quantity, 0));
     
-    // Fetch stock information for all cart items
     const fetchStockInfo = async () => {
       try {
         const stockData = {};
-        const totalStockData = {}; // Store the total stock
+        const totalStockData = {}; 
         for (const item of items) {
           const response = await fetch(`http://localhost:8000/api/products/${item.id}`);
           if (response.ok) {
             const product = await response.json();
             stockData[item.id] = product.quantity;
-            totalStockData[item.id] = product.quantity + item.quantity; // Add current cart quantity
+            totalStockData[item.id] = product.quantity + item.quantity; 
           }
         }
         setProductStock(stockData);
-        setTotalStock(totalStockData); // Set total stock
+        setTotalStock(totalStockData);
       } catch (error) {
         console.error('Error fetching stock info:', error);
       }
@@ -68,10 +67,8 @@ const CartPage = () => {
     calculateTotal(updatedCart);
     setItemCount(updatedCart.reduce((acc, item) => acc + item.quantity, 0));
 
-    // Add the removed quantity back to the stock
     updateProductStock(itemId, itemQuantity);
     
-    // Update available stock
     setProductStock(prev => ({
       ...prev,
       [itemId]: prev[itemId] + itemQuantity
@@ -86,18 +83,14 @@ const CartPage = () => {
   const handleUpdateQuantity = async (itemId, amount) => {
     const item = cartItems.find(item => item.id === itemId);
     const newQuantity = item.quantity + amount;
-    const maxAllowedQuantity = totalStock[itemId]; // Use total stock instead of current stock
-
-    // Check if we're trying to increase quantity
+    const maxAllowedQuantity = totalStock[itemId]; 
     if (amount > 0) {
-      // Verify against total stock
       if (newQuantity > maxAllowedQuantity) {
         showStockWarning(`Only ${maxAllowedQuantity} items available in total`);
         return;
       }
     }
 
-    // If we're decreasing and already at 1, do nothing
     if (amount < 0 && item.quantity <= 1) {
       return;
     }
@@ -109,16 +102,13 @@ const CartPage = () => {
       return item;
     });
 
-    // Update backend stock
     await updateProductStock(itemId, amount > 0 ? -1 : 1);
 
-    // Update local state
     setCartItems(updatedCart);
     localStorage.setItem('cart', JSON.stringify(updatedCart));
     calculateTotal(updatedCart);
     setItemCount(updatedCart.reduce((acc, item) => acc + item.quantity, 0));
 
-    // Update stock in state
     setProductStock(prev => ({
       ...prev,
       [itemId]: prev[itemId] + (amount > 0 ? -1 : 1)

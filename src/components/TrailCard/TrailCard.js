@@ -6,7 +6,7 @@ const TrailCard = ({ trail }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/trails/${trail._id}`); // Navigate to trail detail page
+    navigate(`/trails/${trail._id}`);
   };
 
   return (

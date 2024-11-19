@@ -1,6 +1,5 @@
-/* ProductDetails.css */
 .product-container {
-  margin-top: 78px; /* Account for navbar */
+  margin-top: 78px; 
   padding: 40px;
   min-height: calc(100vh - 200px);
   background-color: #f8f9fa;
@@ -38,7 +37,6 @@
   color: #dc3545;
 }
 
-/* Image Section */
 .product-image-section {
   background-color: #f8f9fa;
   padding: 40px;
@@ -50,7 +48,7 @@
 .image-wrapper {
   width: 100%;
   position: relative;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
+  padding-top: 100%; 
   overflow: hidden;
   border-radius: 8px;
 }
@@ -69,7 +67,6 @@
   transform: scale(1.05);
 }
 
-/* Badges */
 .badge {
   position: absolute;
   padding: 6px 12px;
@@ -93,7 +90,6 @@
   color: white;
 }
 
-/* Product Info Section */
 .product-info-section {
   padding: 40px;
   display: flex;
@@ -214,9 +210,7 @@
   background-color: #1971c2;
 }
 
-/* ProductDetails.css */
 
-/* Additional styles for Quantity Selector */
 .quantity-selector {
   display: flex;
   align-items: center;
@@ -254,7 +248,6 @@
   background-color: #ffffff;
 }
 
-/* Add these new styles to your existing ProductDetails.css */
 
 .image-wrapper.sold-out {
   position: relative;
@@ -309,7 +302,6 @@
   animation: fadeIn 0.3s ease-out;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -383,24 +375,7 @@
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .sold-out-text {
-    font-size: 1.2rem;
-    padding: 8px 24px;
-  }
-  
-  .sold-out-badge {
-    font-size: 0.9rem;
-    padding: 6px 12px;
-  }
-  
-  .restock-message {
-    font-size: 0.85rem;
-  }
-}
-/* Add these styles to your existing ProductDetails.css */
-/* Updated stock warning styles */
+
 .stock-warning {
   position: fixed;
   top: 32px;
@@ -442,12 +417,4 @@
   }
 }
 
-/* Add responsive adjustments */
-@media (max-width: 768px) {
-  .stock-warning {
-    min-width: 280px;
-    font-size: 1rem;
-    padding: 14px 28px;
-  }
-}
 

@@ -152,34 +152,3 @@
   .continue-btn:hover, .submit-btn:hover {
     background-color: #1971c2;
   }
-  
-  @media (max-width: 768px) {
-    .payment-container {
-      padding: 20px;
-    }
-  
-    .payment-header {
-      flex-direction: column;
-      gap: 15px;
-      align-items: flex-start;
-    }
-  
-    .form-row {
-      grid-template-columns: 1fr;
-      gap: 24px;
-    }
-  
-    .progress-bar {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .progress-bar::after {
-      display: none;
-    }
-  
-    .progress-step {
-      width: 100%;
-      text-align: center;
-    }
-  }
