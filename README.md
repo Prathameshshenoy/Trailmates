@@ -1,4 +1,4 @@
-![Screenshot 2025-03-12 at 5 12 54 PM](https://github.com/user-attachments/assets/28fa5b89-1322-4cae-9be0-0b6ca5738d9f)![Screenshot 2025-03-12 at 5 12 54 PM](https://github.com/user-attachments/assets/b09a1eae-0ccd-41b8-9448-3116b835ec59)# Trailmates
+# Trailmates
 A fullstack wesbite with a clean and modern UI used to give hiking trails in and around the chosen city. This project was made using the MERN stack.
 
 ## Features
