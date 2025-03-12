@@ -5,14 +5,14 @@ A fullstack wesbite with a clean and modern UI used to give hiking trails in and
 1. A list of all the treks in and around the city chosen by the user
 2. A community page where users can submit trails which when approved by the admin will get displayed on the site
 3. A shopping page where users can buy hiking products
-4. Login page
+4. Login & Sign Up page
 
 Screenshots:
 ![Screenshot 2025-03-12 at 5 16 06 PM](https://github.com/user-attachments/assets/30766f56-1278-4318-870b-0e9c2102daee)
 ![Screenshot 2025-03-12 at 5 16 11 PM](https://github.com/user-attachments/assets/45c4c072-9df5-44e5-97c1-c39c3051e8b8)
-![Screenshot 2025-03-12 at 5 12 42 PM](https://github.com/user-attachments/assets/7523712b-b3f6-4f17-9303-b6b6f327361b)
-![Screenshot 2025-03-12 at 5 12 54 PM](https://github.com/user-attachments/assets/bcd7868a-cc69-4778-8b81-4fd45957e747)
-![Screenshot 2025-03-12 at 5 13 15 PM](https://github.com/user-attachments/assets/3539ccdd-4820-4365-9498-3f649b8041f7)
+![Screenshot 2025-03-12 at 5 21 14 PM](https://github.com/user-attachments/assets/d7c2875c-4cad-45d2-9f03-ce860b0dfbbc)
+![Screenshot 2025-03-12 at 5 21 23 PM](https://github.com/user-attachments/assets/501e9c01-e7db-441a-b5ed-bf60e8b00631)
+![Screenshot 2025-03-12 at 5 22 33 PM](https://github.com/user-attachments/assets/6b20b05d-cc47-4bcb-8f11-a1f73b09a2ea)
 ![Screenshot 2025-03-12 at 5 18 07 PM](https://github.com/user-attachments/assets/cde29291-2771-4255-bd9a-4defa1f140d1)
 ![Screenshot 2025-03-12 at 5 14 19 PM](https://github.com/user-attachments/assets/c7b81898-6194-4c0b-9a4d-7543cc766ecb)
 ![Screenshot 2025-03-12 at 5 14 26 PM](https://github.com/user-attachments/assets/667f51bd-2a3f-4c10-b1f6-4a3e9eb6cbb2)
