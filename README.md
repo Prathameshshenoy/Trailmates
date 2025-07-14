@@ -1,92 +1,38 @@
-# Trailmates
-A fullstack wesbite with a clean and modern UI used to give hiking trails in and around the chosen city. This project was made using the MERN stack.
+# TrailMates
 
-## Features
-1. A list of all the treks in and around the city chosen by the user
-2. A community page where users can submit trails which when approved by the admin will get displayed on the site
-3. A shopping page where users can buy hiking products
-4. Login & Sign Up page
+**TrailMates** is a full-stack hiking trail web app built with the **MERN** stack. It helps users discover treks in and around their city, submit new trails, and shop for hiking gear — all through a clean, modern UI.
 
-Screenshots:
-![Screenshot 2025-03-12 at 5 16 06 PM](https://github.com/user-attachments/assets/30766f56-1278-4318-870b-0e9c2102daee)
-![Screenshot 2025-03-12 at 5 16 11 PM](https://github.com/user-attachments/assets/45c4c072-9df5-44e5-97c1-c39c3051e8b8)
-![Screenshot 2025-03-12 at 5 21 14 PM](https://github.com/user-attachments/assets/d7c2875c-4cad-45d2-9f03-ce860b0dfbbc)
-![Screenshot 2025-03-12 at 5 21 23 PM](https://github.com/user-attachments/assets/501e9c01-e7db-441a-b5ed-bf60e8b00631)
-![Screenshot 2025-03-12 at 5 22 33 PM](https://github.com/user-attachments/assets/6b20b05d-cc47-4bcb-8f11-a1f73b09a2ea)
-![Screenshot 2025-03-12 at 5 18 07 PM](https://github.com/user-attachments/assets/cde29291-2771-4255-bd9a-4defa1f140d1)
-![Screenshot 2025-03-12 at 5 14 19 PM](https://github.com/user-attachments/assets/c7b81898-6194-4c0b-9a4d-7543cc766ecb)
-![Screenshot 2025-03-12 at 5 14 26 PM](https://github.com/user-attachments/assets/667f51bd-2a3f-4c10-b1f6-4a3e9eb6cbb2)
-![Screenshot 2025-03-12 at 5 14 33 PM](https://github.com/user-attachments/assets/14479c3e-93b0-4dd0-9506-0604b2ddde46)
-![Screenshot 2025-03-12 at 5 14 46 PM](https://github.com/user-attachments/assets/e8535e07-dec5-4858-be67-28b7d2c181ab)
+---
 
+## 🚀 Features
 
-# Getting Started with Create React App
+- 🗺️ **Browse Trails:** See a curated list of treks near any selected city.
+- ✍️ **Community Submissions:** Users can submit new trails, which admins review and approve.
+- 🛒 **Shop:** Buy hiking products directly through an integrated shopping page.
+- 🔒 **Authentication:** Secure user Sign Up & Login.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🛠️ Tech Stack
 
-In the project directory, you can run:
+- **Frontend:** React.js, HTML, CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📷 Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Screenshot 1](https://github.com/user-attachments/assets/30766f56-1278-4318-870b-0e9c2102daee)
+![Screenshot 2](https://github.com/user-attachments/assets/45c4c072-9df5-44e5-97c1-c39c3051e8b8)
+![Screenshot 3](https://github.com/user-attachments/assets/d7c2875c-4cad-45d2-9f03-ce860b0dfbbc)
+![Screenshot 4](https://github.com/user-attachments/assets/501e9c01-e7db-441a-b5ed-bf60e8b00631)
+![Screenshot 5](https://github.com/user-attachments/assets/6b20b05d-cc47-4bcb-8f11-a1f73b09a2ea)
+![Screenshot 6](https://github.com/user-attachments/assets/cde29291-2771-4255-bd9a-4defa1f140d1)
+![Screenshot 7](https://github.com/user-attachments/assets/c7b81898-6194-4c0b-9a4d-7543cc766ecb)
+![Screenshot 8](https://github.com/user-attachments/assets/667f51bd-2a3f-4c10-b1f6-4a3e9eb6cbb2)
+![Screenshot 9](https://github.com/user-attachments/assets/14479c3e-93b0-4dd0-9506-0604b2ddde46)
+![Screenshot 10](https://github.com/user-attachments/assets/e8535e07-dec5-4858-be67-28b7d2c181ab)
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
